@@ -86,13 +86,23 @@
       <span class="tag"><span class="dot dot-inferred" aria-hidden="true"></span>Estimated by the model</span>
     </div>
     <p>
-      Nutrition gets the same treatment, per macro rather than as one block.
-      If a creator says a dish is "540 calories, 48g protein" but doesn't
-      mention carbs or fat, only calories and protein are labelled as
-      creator-stated — carbs and fat are calculated separately and labelled
-      as such. And when the bot's own calculation disagrees with a number
-      the creator stated, it shows its own figure but keeps the creator's
-      claim visible right alongside it, so nothing is silently overridden.
+      Nutrition gets the same treatment, per nutrient rather than as one
+      block — calories and macros, plus fibre, sugar, sodium and a range of
+      vitamins and minerals where they can be estimated with reasonable
+      grounding. If a creator says a dish is "540 calories, 48g protein" but
+      doesn't mention carbs or fat, only calories and protein are labelled
+      as creator-stated — everything else is calculated separately and
+      labelled as such. When a creator has stated a figure, that is the
+      number shown, and our own estimate is kept visible alongside it as a
+      cross-check rather than silently replacing what they said.
+    </p>
+    <p>
+      Micronutrients deserve a specific caveat: creators almost never state
+      them, so nearly all of them are model estimates rather than anything
+      measured. They are labelled accordingly and shown with less weight
+      than figures a creator actually gave. A nutrient the bot cannot
+      estimate with reasonable grounding is left out entirely rather than
+      guessed at to fill the panel.
     </p>
   </section>
 
