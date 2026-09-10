@@ -1,0 +1,128 @@
+<!--
+  This page is a good-faith, plain-language draft written for a personal,
+  early-access project. It is NOT legal advice and has not been reviewed by
+  a lawyer. It should get a professional legal review before this product is
+  monetized or serves other people's data at any scale.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="icon.png">
+<title>Privacy Policy — Recipe Reel Bot</title>
+<meta name="description" content="What Recipe Reel Bot collects, why, who it's shared with, and how long it's kept.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-mark" aria-hidden="true">🍲</span>
+      Recipe Reel Bot
+    </a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="privacy.html" aria-current="page">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="data-deletion.html">Data Deletion</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="prose">
+  <span class="eyebrow">Effective 2026-09-10</span>
+  <h1>Privacy Policy</h1>
+  <p class="lede">
+    Recipe Reel Bot is an early-access, personal project. This page explains
+    what data it collects, why, who it's shared with, and how long it's
+    kept — in plain language, not legalese.
+  </p>
+
+  <h2>What we collect</h2>
+  <p>When you share a Reel or post with the bot over Instagram DM, we collect:</p>
+  <ul>
+    <li>Your Instagram-scoped user ID (IGSID) — an identifier tied to your Instagram account for this app, not your Instagram password or profile.</li>
+    <li>Message IDs for the DMs you send the bot.</li>
+    <li>Metadata about the media you share (e.g. the post's permalink, caption, and creator information).</li>
+  </ul>
+  <p>
+    To build a recipe, the caption text and, when the shared post's video is
+    downloadable, its audio track and a small number of sampled video frames
+    are processed. These are read once to extract a recipe; the bot does not
+    scrape Instagram or access content you haven't shared with it.
+  </p>
+
+  <h2>Who we share it with</h2>
+  <p>
+    To turn a Reel into a structured recipe, captions, audio transcripts,
+    and sampled frames are sent to third-party AI providers for processing:
+  </p>
+  <ul>
+    <li><strong>OpenAI</strong> — audio transcription and reasoning (turning evidence into a structured recipe).</li>
+    <li><strong>Google</strong> — vision analysis of sampled video frames (e.g. reading on-screen text).</li>
+    <li><strong>Anthropic</strong> — reasoning, used for harder extraction cases.</li>
+  </ul>
+  <p>
+    These providers process the data to return a result to the bot; they are
+    not used to build a public profile of you, and the bot doesn't sell your
+    data to anyone.
+  </p>
+
+  <h2>How long we keep it</h2>
+  <p>
+    Downloaded video, audio, and extracted frames are cached only for as
+    long as it takes to process them, and are deleted within 24 hours
+    regardless of outcome. The derived recipe — the ingredients, steps,
+    timing, and nutrition the AI reconstructed — stays in your personal
+    cookbook until you delete it yourself.
+  </p>
+
+  <h2>Creator attribution</h2>
+  <p>
+    Every recipe saved through the bot is derived from someone else's
+    Instagram post. We keep and display that creator's username and a link
+    to their original post alongside the recipe, as attribution. We never
+    redistribute or rehost the original video.
+  </p>
+
+  <div class="callout">
+    <span class="callout-title">Accuracy disclaimer</span>
+    <p>
+      Extracted recipes and nutrition figures are automated estimates, not
+      dietary, nutritional, or medical advice. Verify anything that matters
+      before you rely on it — allergens especially.
+    </p>
+  </div>
+
+  <h2>Your choices</h2>
+  <p>
+    You can ask us to permanently delete everything we hold about your
+    account at any time — see the
+    <a href="data-deletion.html">Data Deletion page</a> for the exact steps.
+  </p>
+
+  <h2>Contact</h2>
+  <p>
+    This is a personal project without a support team. If you have a
+    question about your data, message the operator directly via Instagram
+    DM.
+  </p>
+
+  <h2>Changes to this policy</h2>
+  <p>
+    Because this is an early-access project, this policy may change as the
+    product evolves. The "last updated" date in the footer of every page
+    reflects the most recent revision.
+  </p>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <span>Last updated: 2026-09-10</span>
+    <a href="index.html">Back to home</a>
+  </div>
+</footer>
+</body>
+</html>

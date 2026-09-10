@@ -1,0 +1,148 @@
+<!--
+  Legal-adjacent copy on this site (privacy.html, terms.html,
+  data-deletion.html) is a good-faith, plain-language draft written for a
+  personal, early-access project. It is NOT legal advice and has not been
+  reviewed by a lawyer. It should get a professional legal review before
+  this product is monetized or serves other people's data at any scale.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="icon.png">
+<title>Recipe Reel Bot — turn shared Reels into saved recipes</title>
+<meta name="description" content="Share an Instagram Reel with Recipe Reel Bot and get back a structured recipe — ingredients, steps, and nutrition, each labelled by how confidently it was known.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-mark" aria-hidden="true">🍲</span>
+      Recipe Reel Bot
+    </a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="data-deletion.html">Data Deletion</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero">
+    <span class="eyebrow">Early access &middot; personal project</span>
+    <h1>Send us a Reel. Get back a recipe.</h1>
+    <p class="lede">
+      Share any Instagram Reel with Recipe Reel Bot's DM inbox and it reads
+      the caption, and where available the audio track and a handful of
+      sampled video frames, then reconstructs a structured recipe —
+      ingredients with quantities, steps, prep and cook time, and estimated
+      nutrition — and saves it to your personal cookbook.
+    </p>
+    <div class="hero-actions">
+      <a class="button button-primary" href="https://www.instagram.com/direct/inbox/">Message on Instagram</a>
+      <a class="button button-secondary" href="data-deletion.html">Delete my data</a>
+    </div>
+  </section>
+
+  <section>
+    <h2>How it works</h2>
+    <div class="card-grid">
+      <div class="card">
+        <h3>1. Share a Reel</h3>
+        <p>Forward any recipe Reel or post to the bot's Instagram DM inbox, the same way you'd share it with a friend.</p>
+      </div>
+      <div class="card">
+        <h3>2. It reads everything it can</h3>
+        <p>The caption is the backbone. When the video is downloadable, its audio track is transcribed and a few sampled frames are analyzed for on-screen text and visuals.</p>
+      </div>
+      <div class="card">
+        <h3>3. AI reconstructs the recipe</h3>
+        <p>Ingredients, quantities, steps, timing, and nutrition are extracted and validated, then sent back to you as a saved recipe card.</p>
+      </div>
+      <div class="card">
+        <h3>4. It lands in your cookbook</h3>
+        <p>Saved recipes build into a personal cookbook you can revisit, scale, and pull into a shopping list.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Every field says how confident it is</h2>
+    <p>
+      This is the part we care about most. An AI reconstructing a recipe from
+      a 30-second video is going to be uncertain about some things — the bot
+      never hides that. Every extracted field is tagged with how it was
+      known, and the interface never presents an estimate with the same
+      visual weight as something the creator actually said.
+    </p>
+    <div class="tag-row">
+      <span class="tag"><span class="dot dot-explicit" aria-hidden="true"></span>Stated by the creator</span>
+      <span class="tag"><span class="dot dot-visible" aria-hidden="true"></span>Seen on screen</span>
+      <span class="tag"><span class="dot dot-inferred" aria-hidden="true"></span>Estimated by the model</span>
+    </div>
+    <p>
+      Nutrition gets the same treatment, per macro rather than as one block.
+      If a creator says a dish is "540 calories, 48g protein" but doesn't
+      mention carbs or fat, only calories and protein are labelled as
+      creator-stated — carbs and fat are calculated separately and labelled
+      as such. And when the bot's own calculation disagrees with a number
+      the creator stated, it shows its own figure but keeps the creator's
+      claim visible right alongside it, so nothing is silently overridden.
+    </p>
+  </section>
+
+  <section>
+    <h2>Built on Meta's official messaging API</h2>
+    <p>
+      Recipe Reel Bot talks to Instagram exclusively through Meta's official
+      Instagram Messaging API. It does not scrape Instagram, and it only
+      ever sees content a user actively shares with it via DM.
+    </p>
+  </section>
+
+  <section>
+    <h2>Every recipe credits its creator</h2>
+    <p>
+      Recipes are derived from other people's posts, so the original
+      creator's username and a link back to their post are shown alongside
+      every saved recipe. The bot never redistributes or rehosts the
+      original video — it only reads it, once, to build the recipe.
+    </p>
+  </section>
+
+  <div class="callout">
+    <span class="callout-title">Please verify before you cook</span>
+    <p>
+      Extracted recipes and nutrition figures are automated estimates, not
+      dietary, nutritional, or medical advice. Always double-check anything
+      that matters to your health or safety — allergens especially — against
+      the original post or your own judgment.
+    </p>
+  </div>
+
+  <section>
+    <h2>Status</h2>
+    <p>
+      Recipe Reel Bot is an early-access, personal project, not a commercial
+      service. Expect rough edges. See our
+      <a href="privacy.html">Privacy Policy</a>,
+      <a href="terms.html">Terms of Service</a>, and
+      <a href="data-deletion.html">Data Deletion instructions</a> for the
+      full picture of what's collected and how to remove it.
+    </p>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <span>Last updated: 2026-09-10</span>
+    <a href="index.html">Back to home</a>
+  </div>
+</footer>
+</body>
+</html>
