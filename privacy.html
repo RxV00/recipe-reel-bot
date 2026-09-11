@@ -60,10 +60,18 @@
     and sampled frames are sent to third-party AI providers for processing:
   </p>
   <ul>
-    <li><strong>OpenAI</strong> — audio transcription and reasoning (turning evidence into a structured recipe).</li>
-    <li><strong>Google</strong> — vision analysis of sampled video frames (e.g. reading on-screen text).</li>
-    <li><strong>Anthropic</strong> — reasoning, used for harder extraction cases.</li>
-  </ul>
+      <li><strong>Google (Gemini)</strong> — reads the caption text and
+        reconstructs the structured recipe. In practice this handles
+        essentially all extraction.</li>
+      <li><strong>OpenAI or Anthropic</strong> — a second, more capable
+        model used only when the first pass produces a result the bot
+        judges too uncertain to keep.</li>
+      <li><strong>Audio transcription and video-frame analysis</strong> are
+        implemented, but only apply when the shared media can actually be
+        downloaded. Instagram does not make a shared Reel's video available
+        to us, so in practice no audio or video of yours is sent anywhere —
+        the caption is the only thing processed.</li>
+    </ul>
   <p>
     These providers process the data to return a result to the bot; they are
     not used to build a public profile of you, and the bot doesn't sell your
